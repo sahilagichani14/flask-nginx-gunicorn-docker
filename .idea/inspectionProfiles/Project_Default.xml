@@ -1,0 +1,44 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="1" class="java.lang.String" itemvalue="pyautogui" />
+            <item index="2" class="java.lang.String" itemvalue="pyaudio" />
+            <item index="3" class="java.lang.String" itemvalue="git" />
+            <item index="4" class="java.lang.String" itemvalue="os" />
+            <item index="5" class="java.lang.String" itemvalue="json" />
+            <item index="6" class="java.lang.String" itemvalue="shutil" />
+            <item index="7" class="java.lang.String" itemvalue="unittest" />
+            <item index="8" class="java.lang.String" itemvalue="time" />
+            <item index="9" class="java.lang.String" itemvalue="subprocess" />
+            <item index="10" class="java.lang.String" itemvalue="enum" />
+            <item index="11" class="java.lang.String" itemvalue="pathlib" />
+            <item index="12" class="java.lang.String" itemvalue="gitpython" />
+            <item index="13" class="java.lang.String" itemvalue="flask" />
+            <item index="14" class="java.lang.String" itemvalue="docker" />
+            <item index="15" class="java.lang.String" itemvalue="Flask-APScheduler" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="services.service.ExecutionEngineServices.get_logfile" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
