@@ -9,3 +9,6 @@ docker-compose logs -f
 
 # Bring down the development containers (and the associated volumes with the -v flag):
 docker-compose down -v
+
+# To see the ip of container
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
