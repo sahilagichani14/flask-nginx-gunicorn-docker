@@ -3,9 +3,16 @@ version: '3.8'
 services:
   execution_engine:
     build: .
-    command: gunicorn --bind 0.0.0.0:5000 manage:app
+    command: >
+      bash -c "sh init.sh
+      && gunicorn --bind 0.0.0.0:5000 manage:app"
+#    secrets:
+#        - id_rsa
 #    volumes:
 #      - ./flask-nginx-gunicorn-docker/:/usr/src/app/
+#      - ~/.ssh:/home/user/.ssh:ro
+#       - ./init.sh:/init.sh
+#       - ~/.ssh/ssegit_ssh_files:/root/.ssh/
     expose:
       - 5000
     env_file:
@@ -17,3 +24,7 @@ services:
       - 1337:5000
     depends_on:
       - execution_engine
+
+#secrets:
+#  id_rsa:
+#    file: ~/.ssh # path to your private ssh key locally

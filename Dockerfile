@@ -14,6 +14,9 @@ ENV PYTHONUNBUFFERED 1
 RUN apt update
 RUN apt install -y git
 
+RUN apt-get install -y git-core
+RUN apt-get install -y openssh-client
+
 # install dependencies
 RUN pip install --upgrade pip
 COPY ./requirements.txt /usr/src/app/requirements.txt
